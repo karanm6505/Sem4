@@ -1,0 +1,6 @@
+.text
+MOV R1, #10
+MOV R2, #20
+STMFA sp!,{R1,R2}
+LDMDA sp,{R4,R5}
+SWI 0x01

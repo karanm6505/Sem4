@@ -1,0 +1,6 @@
+.text
+MOV R0,#3
+MOV R2,#4
+ADD R1,R0,R2, LSL #4
+SUB R0,R1,R3, LSR #2
+ADDS R0,R1,R2, ASR #6

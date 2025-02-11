@@ -1,0 +1,92 @@
+*PPD-Adobe: "4.3"
+*% PPD created by ipp2ppd (v3:Nov  5 2022)
+*FormatVersion: "4.3"
+*FileVersion: "3.0"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PSVersion: "(3010.000) 0"
+*LanguageLevel: "3"
+*FileSystem: False
+*cupsVersion: 2.0
+*cupsModelNumber: 0
+*cupsSNMPSupplies: False
+*APAirPrint: True
+*APAirPrintVersion: 2.1
+*APURFVersion: 1.4
+*APPrinterFWVersion: "SAYAPPPP1N002.2215A.00:SAYAPPPP1N002.2215A.00"
+*% WARNING no printer-strings for the language "en"
+*cupsLanguages: "en"
+*cupsIdentifyActions: "display sound"
+*APPrinterIconPath: "/Library/Printers/Icons/F6808967-64DD-4414-9A4A-5DE3F6C46ED0.icns"
+*APAcceptsMixedURF: True
+*PCFileName: "APHPSMAR.PPD"
+*ModelName: "HP Smart Tank 790 series"
+*Product: (HP Smart Tank 790 series)
+*ShortNickName: "HP Smart Tank 790 series"
+*Manufacturer: "HP"
+*NickName: "HP Smart Tank 790 series-AirPrint"
+*cupsFax: True
+*cupsIPPFaxOut: True
+*% WARNING required pages-per-minute attribute not found. *Throughput suppressed
+*cupsSingleFile: True
+*cupsFilter2: "image/urf image/urf 10 -"
+*cupsFilter: "image/urf 10 -"
+*cupsManualCopies: True
+*cupsMaxCopies: 1
+*ColorDevice: False
+*APColorSpaces: true
+*DefaultColorSpace: Gray
+*cupsICCProfile Gray../Grayscale: "/System/Library/ColorSync/Profiles/Generic Gray Gamma 2.2 Profile.icc"
+*OpenUI *ColorModel/Color Mode: PickOne
+*OrderDependency: 10 AnySetup *ColorModel
+*DefaultColorModel: Gray
+*ColorModel Gray/Grayscale: "<</cupsColorSpace 18/cupsBitsPerColor 8/cupsColorOrder 0/cupsCompression 0>>setpagedevice"
+*CloseUI: *ColorModel
+*% WARNING required landscape-orientation-requested-preferred not found. Using default
+*LandscapeOrientation: Plus90
+*DefaultResolution: 200x200dpi
+*OpenUI *cupsPrintQuality/Quality: PickOne
+*OrderDependency: 10 AnySetup *cupsPrintQuality
+*DefaultcupsPrintQuality: Normal
+*cupsPrintQuality Normal: "<</cupsInteger1 4 /HWResolution[200 200]>>setpagedevice"
+*CloseUI: *cupsPrintQuality
+*cupsBackSide: Normal
+*DefaultOutputOrder: Normal
+*OpenUI *PageSize/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A4: "<</PageSize[595.2756 841.8898]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageSize Legal: "<</PageSize[612.0000 1008.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageSize Legal.Fullbleed: "<</PageSize[612.0000 1008.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageSize Letter: "<</PageSize[612.0000 792.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageSize Letter.Fullbleed: "<</PageSize[612.0000 792.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*CloseUI: *PageSize
+*OpenUI *PageRegion/Media Size: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: A4
+*PageRegion A4: "<</PageSize[595.2756 841.8898]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageRegion Legal: "<</PageSize[612.0000 1008.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageRegion Legal.Fullbleed: "<</PageSize[612.0000 1008.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageRegion Letter: "<</PageSize[612.0000 792.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*PageRegion Letter.Fullbleed: "<</PageSize[612.0000 792.0000]/ImagingBBox null/Orientation 0>>setpagedevice"
+*CloseUI: *PageRegion
+*DefaultImageableArea: A4
+*DefaultPaperDimension: A4
+*PaperDimension A4: "595.2756 841.8898"
+*ImageableArea A4: "0.0000 0.0000 595.2756 841.8898"
+*PaperDimension Legal: "612.0000 1008.0000"
+*ImageableArea Legal: "0.0000 0.0000 612.0000 1008.0000"
+*PaperDimension Legal.Fullbleed: "612.0000 1008.0000"
+*ImageableArea Legal.Fullbleed: "0.0000 0.0000 612.0000 1008.0000"
+*PaperDimension Letter: "612.0000 792.0000"
+*ImageableArea Letter: "0.0000 0.0000 612.0000 792.0000"
+*PaperDimension Letter.Fullbleed: "612.0000 792.0000"
+*ImageableArea Letter.Fullbleed: "0.0000 0.0000 612.0000 792.0000"
+*APPrinterPreset Gray_with_Paper_Auto-Detect/Black and White: "
+	*cupsPrintQuality Normal
+	*ColorModel Gray
+	com.apple.print.preset.graphicsType General
+	com.apple.print.preset.quality mid
+	com.apple.print.preset.media-front-coating autodetect
+	com.apple.print.preset.output-mode monochrome"
+*End

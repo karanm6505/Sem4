@@ -1,0 +1,10 @@
+.text
+
+;MOV R8,#231
+;MOV R9,#123
+;SBC R10,R9,R8
+
+
+
+MOV R10,#0
+BX R10
