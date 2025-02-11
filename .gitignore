@@ -1,8 +1,4 @@
 # Ignore everything
 *
-# Except directories (so Git can traverse them)
-!*/
 # Except files ending with .s
 !*.s
-# (Optional) Include the .gitignore file itself if you want to track it
-!.gitignore
