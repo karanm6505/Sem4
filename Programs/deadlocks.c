@@ -43,10 +43,32 @@ int main(void)
     if(pthread_mutex_init(&first_mutex,NULL)!=0)
     {
         printf("\nFirst mutex initialisation has failed");
+        return 1;
     }
     if(pthread_mutex_init(&second_mutex,NULL)!=0)
     {
         printf("\nSecond mutex initialisation has failed");
+        return 1;
     }
+
+    error = pthread_create(&tid1,NULL,&do_work_one,NULL);
+    if(error != 0) {
+        printf("\nFirst thread can't be created :[%s]",strerror(error));
+        return 1;
+    }
+
+    error = pthread_create(&tid2,NULL,&do_work_two,NULL);
+    if(error != 0) {
+        printf("\nFirst thread can't be created :[%s]",strerror(error));
+        return 1;
+    }
+
+    pthread_join(tid1,NULL);
+    pthread_join(tid2,NULL);
+
+    pthread_mutex_destroy(&first_mutex);
+    pthread_mutex_destroy(&second_mutex);
+    
+    return 0;
 }
 
