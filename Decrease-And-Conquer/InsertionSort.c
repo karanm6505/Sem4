@@ -1,33 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "utils.h"
 
-void swap(int *a, int *b)
-{
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-void bubbleSort(int arr[], int n)
-{
-    for(int i = 0; i < n-1; i++) 
+void insertionSort(int A[], int n)
+{ 
+    for(int i = 1; i < n; i++)
     {
-        for(int j = 0; j < n-i-1; j++) 
+        int v = A[i];
+        int j = i-1;
+        while(j >= 0 && A[j] > v)
         {
-            if(arr[j] > arr[j+1]) 
-            {
-               swap(&arr[j],&arr[j+1]);
-            }
+            A[j+1] = A[j];    
+            j--;
         }
+        A[j+1] = v;
     }
 }
+
 int main() 
 {
     srand(time(0));  
     clock_t start, end;
     double cpu_time_used;
     
-    int sizes[] = {1,5,10,25,50,75,100,250,500,1000,5000,10000,50000,100000};
+    int sizes[] = {1,5,10,25,50,75,100,250,500,1000,5000,10000,50000,100000,200000,250000};
     int num_sizes = sizeof(sizes) / sizeof(sizes[0]);
     
     printf("Size\tTime (seconds)\n");
@@ -36,13 +33,11 @@ int main()
     for(int i = 0; i < num_sizes; i++) 
     {
         int n = sizes[i];
-        
         int *arr = (int*)malloc(n * sizeof(int));
-        
-        generate_random_array(arr, n);
+        Array(arr, n);
         
         start = clock();
-        bubbleSort(arr, n);
+        insertionSort(arr, n);
         end = clock();
         
         cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;

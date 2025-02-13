@@ -13,7 +13,6 @@ int linearSearch(int A[], int n, int key)
     if(i<n) return i;
     else return -1; 
 }
-
 int main() 
 {
     init_random_seed();
@@ -32,11 +31,11 @@ int main()
         int *arr = (int*)malloc(n * sizeof(int));
         Array(arr, n);
         
-        // We'll search for a number that doesn't exist to get worst-case timing
-        int key = 10001;  // Outside our random range of 0-10000
+       
+        int key = -1; 
         
         start = clock();
-        linearSearch(arr, n, key);  // Worst case - element not found
+        linearSearch(arr, n, key); 
         end = clock();
         
         cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;

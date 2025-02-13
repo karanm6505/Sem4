@@ -18,9 +18,8 @@ int StringMatch(char text[], char pattern[], int n, int m)
     }
     return -1;  
 }
-
-// New helper function to generate random string
-void generate_random_string(char *str, int length) {
+void generate_random_string(char *str, int length) 
+{
     const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
     for (int i = 0; i < length; i++) {
         int key = rand() % (sizeof(charset) - 1);
@@ -28,16 +27,14 @@ void generate_random_string(char *str, int length) {
     }
     str[length] = '\0';
 }
-
 int main()
 {
     srand(time(0));
     clock_t start, end;
     double cpu_time_used;
     
-    // Test cases with increasing text sizes
     int text_sizes[] = {100, 500, 1000, 5000, 10000, 50000, 100000};
-    int pattern_sizes[] = {5, 10, 20, 25, 30, 40, 50};  // Always smaller than text sizes
+    int pattern_sizes[] = {5, 10, 20, 25, 30, 40, 50};  
     int num_sizes = sizeof(text_sizes) / sizeof(text_sizes[0]);
     
     printf("Text Length\tPattern Length\tTime (seconds)\n");
@@ -48,11 +45,9 @@ int main()
         int n = text_sizes[i];
         int m = pattern_sizes[i];
         
-        // Allocate memory for strings
         char *text = (char*)malloc((n + 1) * sizeof(char));
         char *pattern = (char*)malloc((m + 1) * sizeof(char));
         
-        // Generate random strings
         generate_random_string(text, n);
         generate_random_string(pattern, m);
         
