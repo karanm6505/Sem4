@@ -5,18 +5,6 @@ This course explores the design, functionality, and optimization of modern micro
 
 ---
 
-## Course Details
-- **Credits**: 5  
-- **Total Hours**: 126 (Theory + Lab)  
-- **Tools/Languages**:  
-  - ARM Simulator (ARMSIM)  
-  - Arduino Microcontroller Kit  
-  - Para Cache Simulator  
-  - C Programming (for system-level implementations)  
-- **Prerequisites**: Desirable knowledge of UE23CS251A and UE23CS252A (as noted in the syllabus).  
-
----
-
 ## Course Outline
 
 ### **Unit 1: Introduction to Microprocessor Architecture & ISA**  
