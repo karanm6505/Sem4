@@ -40,15 +40,6 @@ This course explores the design, functionality, and optimization of modern micro
   - Amdahl’s Law, Gustafson’s Law  
   - Hardware multithreading and design challenges  
   - Mini-project: Sensor-based project implementation  
-
----
-
-## Lab Sessions (Key Activities)  
-1. **Lab 1-4**: ARM7TDMI ISA programming sequences (data processing, branching, interrupts).  
-2. **Lab 6**: Para Cache Simulator case study (cache performance analysis).  
-3. **Lab 7-9**: Parallel computing and GPU programming experiments.  
-4. **Mini-Project**: Design and demonstrate a sensor-based system using Arduino/Raspberry Pi.  
-
 ---
 
 ## Learning Outcomes  
