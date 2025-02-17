@@ -5,17 +5,6 @@ This course explores the design, implementation, and management of operating sys
 
 ---
 
-## Course Details  
-- **Credits**: 4  
-- **Total Hours**: 84 (Theory + Lab)  
-- **Tools/Languages**:  
-  - C Programming  
-  - Linux/Unix OS (Ubuntu, Fedora)  
-  - Shell Scripting (Bash)  
-  - Tools: GCC, GDB, Cron, Valgrind  
-
----
-
 ## Course Outline  
 
 ### **Unit 1: Introduction and Process Management**  
