@@ -42,18 +42,6 @@ This course explores the design, implementation, and management of operating sys
 
 ---
 
-## Key Labs & Projects  
-1. **Lab 1**: Linux VM setup, basic shell commands, C program compilation.  
-2. **Lab 2**: Process scheduling simulation (FCFS, SJF, Round-Robin).  
-3. **Lab 3**: Shared memory and pipe-based IPC.  
-4. **Lab 4**: Thread synchronization with mutex/semaphores.  
-5. **Lab 5**: Memory management (page replacement algorithms).  
-6. **Lab 6**: File system operations and disk scheduling.  
-7. **Shell Scripting**: Automate tasks using cron jobs.  
-8. **Project**: Implement a custom shell with job control.  
-
----
-
 ## Learning Outcomes  
 By the end of the course, students will:  
 - Design and simulate CPU scheduling algorithms.  
