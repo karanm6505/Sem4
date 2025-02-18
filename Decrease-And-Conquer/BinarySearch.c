@@ -17,9 +17,22 @@ void insertionSort(int A[], int n)
         A[j+1] = v;
     }
 }
+int BinarySearch(int A[], int l, int r, int key)
+{
+    if (l > r)
+        return -1;  
+    int m = l + (r-l)/2;
+    
+    if (A[m] == key)
+        return m;
+    else if (A[m] > key)
+        return BinarySearch(A, l, m-1, key);
+    else
+        return BinarySearch(A, m+1, r, key);
+}
 int main() 
 {
-    srand(time(0));  
+    srand(time(0));
     clock_t start, end;
     double cpu_time_used;
     
@@ -35,8 +48,12 @@ int main()
         int *arr = (int*)malloc(n * sizeof(int));
         Array(arr, n);
         
-        start = clock();
+        // Sort array using insertion sort
         insertionSort(arr, n);
+        
+        // Search for worst case - element not in array
+        start = clock();
+        BinarySearch(arr, 0, n-1, 10000000000);
         end = clock();
         
         cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
