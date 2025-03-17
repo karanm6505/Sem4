@@ -1,20 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/types.h>
 #include <unistd.h>
 
-int main()
-{
+int main() {
     pid_t pid = fork();
-    
-    if(pid > 0) //Parent
-    {
-        sleep(50);
-        printf("Parent pid: %d\n",getpid());
-        printf("Child pid: %d\n",pid);
+
+    if (pid > 0) {  // Parent process
+        printf("Parent (PID: %d), Child (PID: %d) created.\n", getpid(), pid);
+        sleep(10);  // Sleep without calling wait(), keeping child as a zombie
+    } else if (pid == 0) {  // Child process
+        printf("Child (PID: %d) exiting...\n", getpid());
+        exit(0);  // Child terminates, becomes a zombie
     }
-    else if(pid == 0) //Child
-    {
-        printf("Child pid: %d\n",getpid());
-    }
+
+    return 0;
 }
