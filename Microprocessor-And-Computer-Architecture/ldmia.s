@@ -1,0 +1,9 @@
+.data
+A: .word 100,200,300,400,500,600,700,800
+B: .word 0,0,0,0,0,0
+.text
+LDR R0,=A
+LDR R7,=B
+LDMIA R0!,{R8,R10,R11,R9}
+SWI 0x011
+.end
